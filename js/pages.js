@@ -65,8 +65,7 @@ function hashSearchWord() {
     document.body.innerHTML = "<div id=\"button9\">search!</div><div id=\"button10\">検索結果</div><div id=\"button\" onClick=\"topPage()\">戻る</div><div id=\"tweetList\"></div>";
     // 検索結果のjson
     var url = "http://search.twitter.com/search.json?callback=getTweets&q=" +
-              word +
-              " %23teiden";
+              word;
     callback2(url);
 }
 
