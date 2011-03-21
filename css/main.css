@@ -1,0 +1,467 @@
+/*
+	   
+main.css
+created by. sandersonia
+2011
+
+modified by nabetama 2011/03/20
+*/
+
+@charset "UTF-8";
+
+body {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px;
+font-family:'Helvetica';
+font-size: 12pt;
+color: black;
+line-height: normal;
+text-align: left;
+background: #b6d8da;
+height:480px;
+width:320px;
+-webkit-text-size-adjust:none;
+}
+
+p, span, img, ul, ol, li, h1, h2, h3, frameset, frame {
+border: 0px;
+margin: 0px;
+padding: 0px;
+}
+
+
+p {
+font-weight:bold;
+color:#555;
+}
+
+ul {
+list-style-type: none;
+}
+
+
+a {
+text-decoration:none;
+-webkit-tap-highlight-color: rgba(0,255,255,0.3);
+-webkit-user-select:none;
+-webkit-touch-callout:none;
+}
+
+
+
+/*戻るボタン*/
+#button {
+background-color: #014464;
+color:#ffffff;
+width:260px;
+height:40px;
+float:left;
+margin-top:10px;
+margin-left:30px;
+-webkit-border-radius:5px;
+-webkit-box-shadow: 2px 2px 0px rgba(205,192,171,1),-2px -2px 0px rgba(180,160,128,1),-2px 2px 0px rgba(205,192,171,1),2px -2px 0px rgba(180,160,128,1);
+font-size:18pt;
+text-align:center;  
+text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+font-weight: bold;
+border-bottom: 1px solid rgba(0,0,0,0.25);
+border-top: 1px solid rgba(255,255,255,0.25);
+position: relative;
+cursor: pointer;
+display: inline-block;
+line-height: 1.7;
+
+}
+
+/* 現在地周辺ボタン */
+/*
+#button11 {
+background-color: #6ecbe7;
+color:#ffffff;
+width:260px;
+height:40px;
+float:left;
+margin-top:10px;
+margin-left:30px;
+-webkit-border-radius:5px;
+-webkit-box-shadow: 2px 2px 0px rgba(205,192,171,1),-2px -2px 0px rgba(180,160,128,1),-2px 2px 0px rgba(205,192,171,1),2px -2px 0px rgba(180,160,128,1);
+font-size:18pt;
+text-align:center;  
+text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+font-weight: bold;
+border-bottom: 1px solid rgba(0,0,0,0.25);
+border-top: 1px solid rgba(255,255,255,0.25);
+position: relative;
+cursor: pointer;
+display: inline-block;
+line-height: 1.7;
+}
+*/
+
+.button {
+color: #ffffff;
+width: 260px;
+height: 40px;
+float: left;
+margin-top: 10px;
+margin-left: 30px;
+font-size: 18pt;
+font-weight: bold;
+text-align: center;
+background: #014464;
+background: -moz-linear-gradient(top, #0D658E, #0C577A 50%, #014D71 51%, #003E5C);
+background: -webkit-gradient(linear, left top, left bottombottom, color-stop(0, #0E658E), color-stop(.5, #0C577A), color-stop(.5, #014D71), to(#003E5C)); 
+-webkit-border-radius: 5px;
+border: 1px solid #368DBE;
+border-top: 1px solid #c3d6df;  
+text-shadow: 1px 1px 1px black;
+-webkit-box-shadow: 0 1px 3px black;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*青ボタン点滅*/
+#button2 {
+color:#ffffff;
+width:260px;
+height:40px;
+float:left;
+margin-top:10px;
+margin-left:30px;
+-webkit-border-radius:5px;
+font-size:18pt;
+text-align:center;  
+text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+font-weight: bold;
+border-bottom: 1px solid rgba(0,0,0,0.25);
+border-top: 1px solid rgba(255,255,255,0.25);
+position: relative;
+cursor: pointer;
+display: inline-block;
+line-height: 1.7;
+-webkit-animation-name: blueBlink;
+-webkit-animation-duration: 2s;
+-webkit-animation-iteration-count: infinite;
+}
+
+/* 停電のボタン*/
+#button_teiden {
+color:#ffffff;
+width:260px;
+height:40px;
+float:left;
+margin-top:10px;
+margin-left:30px;
+-webkit-border-radius:5px;
+font-size:18pt;
+text-align:center;  
+text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+font-weight: bold;
+border-bottom: 1px solid rgba(0,0,0,0.25);
+border-top: 1px solid rgba(255,255,255,0.25);
+position: relative;
+cursor: pointer;
+display: inline-block;
+line-height: 1.7;
+-webkit-animation-name: blueBlink;
+-webkit-animation-duration: 2s;
+-webkit-animation-iteration-count: infinite;
+}
+
+/* 電車運行情報のボタン*/
+#button_train {
+color:#ffffff;
+width:260px;
+height:40px;
+float:left;
+margin-top:10px;
+margin-left:30px;
+-webkit-border-radius:5px;
+font-size:18pt;
+text-align:center;  
+text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+font-weight: bold;
+border-bottom: 1px solid rgba(0,0,0,0.25);
+border-top: 1px solid rgba(255,255,255,0.25);
+position: relative;
+cursor: pointer;
+display: inline-block;
+line-height: 1.7;
+-webkit-animation-name: blueBlink;
+-webkit-animation-duration: 2s;
+-webkit-animation-iteration-count: infinite;
+}
+
+#target_word {
+width: 232px;
+height: 40px;
+float: left;
+margin-top: 10px;
+margin-left: 30px;
+padding: none;
+-webkit-border-radius: 5px;
+position:relative;
+display: inline-block;
+line-height: 1.7;
+font-size: 18pt;
+text-align: center;
+}
+
+/* 探すボタン */
+#button_search {
+background: #BBBBBB;
+color:#ffffff;
+width:260px;
+height:40px;
+float:left;
+margin-top:1px;
+margin-left:30px;
+-webkit-border-radius:5px;
+font-size:18pt;
+text-align:center;  
+text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+font-weight: bold;
+border-bottom: 1px solid rgba(0,0,0,0.25);
+border-top: 1px solid rgba(255,255,255,0.25);
+position: relative;
+cursor: pointer;
+display: inline-block;
+line-height: 1.7;
+}
+
+/* 20110311ボタン */
+#button3 {
+background-color: #df1b7f;
+color:#ffffff;
+width:300px;
+height:80px;
+float:left;
+margin-left:10px;
+margin-top:20px;
+-webkit-border-radius:5px;
+font-size:48pt;
+text-align:center;  
+-webkit-box-shadow: 2px 2px 0px rgba(205,192,171,1),-2px -2px 0px rgba(180,160,128,1),-2px 2px 0px rgba(205,192,171,1),2px -2px 0px rgba(180,160,128,1);
+text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+font-weight: bold;
+border-bottom: 1px solid rgba(0,0,0,0.25);
+border-top: 1px solid rgba(255,255,255,0.25);
+position: relative;
+display: inline-block;
+line-height: 1.3;
+-webkit-animation-name: drop;
+-webkit-animation-duration: 1s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: once;
+-webkit-transform-origin: middle center;
+}
+
+/*黄色いボタン*/
+#button5 {
+background-color: #683033;
+color:#ffffff;
+width:260px;
+height:40px;
+float:left;
+margin-top:10px;
+margin-left:30px;
+margin-bottom:10px;
+-webkit-border-radius:5px;
+font-size:18pt;
+text-align:center;  
+-webkit-box-shadow: 2px 2px 0px rgba(205,192,171,1),-2px -2px 0px rgba(180,160,128,1),-2px 2px 0px rgba(205,192,171,1),2px -2px 0px rgba(180,160,128,1);
+text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+font-weight: bold;
+border-bottom: 1px solid rgba(0,0,0,0.25);
+border-top: 1px solid rgba(255,255,255,0.25);
+position: relative;
+display: inline-block;
+line-height: 1.7;
+cursor: pointer;
+}
+
+/*おび*/
+#button9 {
+background-color: #df1b7f;
+color:#ffffff;
+width:100px;
+height:40px;
+position:absolute;
+margin-top:8px;
+margin-left:2px;
+-webkit-transform:rotate(-10deg);
+-webkit-border-radius:5px;
+font-size:14pt;
+text-align:center;  
+text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+font-weight: bold;
+border-bottom: 1px solid rgba(0,0,0,0.25);
+border-top: 1px solid rgba(255,255,255,0.25);
+display: inline-block;
+line-height: 1.9;
+z-index:2;
+-webkit-animation-name: appear;
+-webkit-animation-duration: 1.5s;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-iteration-count: once;
+}
+
+/*twitter見出しボタン*/
+#button10 {
+background-color: #75c5e3;
+color:#ffffff;
+width:300px;
+height:80px;
+float:left;
+margin-top:30px;
+margin-left:10px;
+-webkit-border-radius:5px;
+font-size:48pt;
+text-align:center;  
+-webkit-box-shadow: 2px 2px 0px rgba(205,192,171,1),-2px -2px 0px rgba(180,160,128,1),-2px 2px 0px rgba(205,192,171,1),2px -2px 0px rgba(180,160,128,1);
+text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+font-weight: bold;
+border-bottom: 1px solid rgba(0,0,0,0.25);
+border-top: 1px solid rgba(255,255,255,0.25);
+position: relative;
+display: inline-block;
+line-height: 1.3;
+-webkit-animation-name: drop;
+-webkit-animation-duration: 1s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: once;
+-webkit-transform-origin: middle center;
+}
+
+
+#footer{
+margin-top:5px;
+text-align:right;
+color:#333;
+float:left;
+font-size:8pt;
+width:220px;
+}
+
+
+/*青ボタン用アニメーション*/
+
+@-webkit-keyframes blueBlink {
+
+from {
+background-color: #75c5e3;
+-webkit-box-shadow: 0 0 9px #555;
+}
+
+50% {
+background-color: #6AD0EB;
+-webkit-box-shadow: 0 0 18px #4694B2;
+}
+
+to {
+background-color: #75c5e3;
+-webkit-box-shadow: 0 0 9px #555;
+}
+
+}
+
+
+/*見出し用アニメーション*/
+
+@-webkit-keyframes drop {
+ 0%{
+ -webkit-transform: rotate(0deg);
+ bottom: 200px;
+ }
+ 20% {
+ -webkit-transform: rotate(0deg);
+ bottom: -25px;
+ }
+ 40% {
+ -webkit-transform: rotate(-7deg);
+ bottom: 0px; 
+ }
+ 50% {
+ -webkit-transform: rotate(3deg);
+ }
+ 60% {
+ -webkit-transform: rotate(-2deg);
+ }
+ 65% {
+ -webkit-transform: rotate(-1deg);
+ }
+ 70% {
+ -webkit-transform: rotate(0deg);
+ }
+ 100% {
+ -webkit-transform: rotate(0deg);
+}
+}
+
+/*ふわっと現れるアニメーション*/
+
+@-webkit-keyframes appear {
+ from {opacity:0;}
+ to {opacity:1;}
+
+}
+
+
+/*Tweet取得用のスタイル*/
+
+#tweetList {
+margin-top:10px;
+}
+
+#tweetList .tweet {
+padding: 5px;
+background: #fff;
+-webkit-border-radius: 8px;
+-webkit-box-shadow: 2px 2px 0px rgba(205,192,171,1),-2px -2px 0px rgba(180,160,128,1),-2px 2px 0px rgba(205,192,171,1),2px -2px 0px rgba(180,160,128,1);
+-webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.8)inset;
+font-size:12pt;
+width:290px;
+margin-left:10px;
+margin-top:4px;
+margin-bottom:4px;
+position: relative;
+display: inline-block;
+word-wrap:break-word;
+-webkit-animation-name: appear;
+-webkit-animation-duration: 1.5s;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-iteration-count: once;
+}
+
+#tweetList a {
+color: #E75990;
+text-decoration: none;
+}
+
+#tweetList .avatar {
+float: left;
+}
+#tweetList .content {
+padding-left: 55px;
+}
+#tweetList .extra {
+color: #666;
+font-size: 10pt;
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+
+<!--
+
+index.html
+created by.sandersonia
+2011
+
+modified by nabetama
+2011/03/20
+
+-->
+
+<html lang="ja">
+ <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="format-detection" content = "telephone=no"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<link rel="stylesheet" href="css/main.css" type="text/css"/>
+	<script type="text/javascript" src="js/main.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/pages.js" charset="UTF-8"></script>
+    <link rel="apple-touch-icon-precomposed" href="img/icon.png" />
+	<title>地震情報</title>
+ </head>
+  <body onLoad="window.setTimeout('window.scrollTo(0, 1)', 100);">
+
+    <div id="button3">
+    20110311
+    </div>
+   
+    <script src="http://search.twitter.com/search.json?callback=getTweets&amp;geocode=35.32311129%2C139.41601822333334%2C1mi"></script>
+
+    <div class="button" onClick="gpsPage()">
+    現在地周辺
+    </div>
+   
+    <div class="button" onClick="hashPage()">
+    地震一般情報
+    </div>
+
+    <div class="button" onClick="hashTeiden()">
+    停電情報
+    </div>
+
+    <div class="button" onClick="hashTrain()">
+    電車運行状況
+    </div>
+
+    <input type="text" id="target_word" placeholder="検索語句を入力">
+    <div id="button_search" onClick="hashSearchWord()">
+    検索
+    </div>
+
+    <div id="footer">
+    Craeted by Mao Nabeta
+    </div>
+   
+  </body>
+</html>
